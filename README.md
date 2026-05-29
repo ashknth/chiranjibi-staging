@@ -1,12 +1,12 @@
 # chiranjibi-staging
 
-Minimal Java Spring Boot application configured to run on port `8080`.
+Minimal Spring Boot application configured for Maven-based builds and production-friendly defaults.
 
 ## Requirements
 
 - Java 17+
-
-Maven is optional because this project includes the Maven Wrapper (`./mvnw`).
+- Maven Wrapper (`./mvnw`)
+- Optional profile overrides via environment-specific Spring configuration
 
 ## Run the app
 
@@ -35,3 +35,6 @@ curl http://localhost:8080/api/health
 ```bash
 java -jar target/chiranjibi-staging-0.0.1-SNAPSHOT.jar
 ```
+
+Runtime settings live in `src/main/resources/application.yml`.
+
