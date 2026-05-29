@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: chiranjibi-staging
+
+server:
+  port: 8080
+
+# Profile-specific configuration files live alongside this file
+# e.g. application-local.yml for the 'local' profile
+
