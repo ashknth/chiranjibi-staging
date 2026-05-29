@@ -5,12 +5,13 @@ Minimal Java Spring Boot application configured to run on port `8080`.
 ## Requirements
 
 - Java 17+
-- Maven 3.9+
+
+Maven is optional because this project includes the Maven Wrapper (`./mvnw`).
 
 ## Run the app
 
 ```bash
-mvn spring-boot:run
+./mvnw spring-boot:run
 ```
 
 Health endpoint:
@@ -22,5 +23,15 @@ curl http://localhost:8080/api/health
 ## Run tests
 
 ```bash
-mvn test
+./mvnw test
+```
+
+## Build a runnable jar
+
+```bash
+./mvnw clean package
+```
+
+```bash
+java -jar target/chiranjibi-staging-0.0.1-SNAPSHOT.jar
 ```
